@@ -1,4 +1,5 @@
 // search for element in the array which is just greater than the given element.
+// O(logN)
 
 int binary_search(int ar[], int n, int element) {
 	int l = 0, r = n;
