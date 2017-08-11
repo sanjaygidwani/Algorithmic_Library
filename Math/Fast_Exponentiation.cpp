@@ -1,5 +1,5 @@
 // (A ^ B) % M
-// O(logN)
+// O(logB)
 
 long long fast_expo(long long a, long long b, long long md) {
 	long long ans = 1;
