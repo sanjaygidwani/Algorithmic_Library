@@ -1,9 +1,9 @@
-// compute etf value
+// Compute Euler Totient Function (ETF) value
 // O(sqrt(N))
 
 int phi(int n) {
 	int result = n;
-	for(int p = 2; p * p <= n; ++p) {
+	for(int p = 2; p * p <= n; ++ p) {
 		if(n % p == 0) {
 			while(n % p == 0) {
 				n /= p;
@@ -17,7 +17,7 @@ int phi(int n) {
 	return result;
 }
 
-// precompute etf
+// Precompute ETF values
 // O(N log(N))
 
 long long etf[N];
