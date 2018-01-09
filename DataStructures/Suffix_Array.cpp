@@ -1,4 +1,4 @@
-#include bits/stdc++.h
+#include <bits/stdc++.h>
 using namespace std;
 
 // suffixRank is table hold the rank of each string on each iteration
