@@ -1,7 +1,7 @@
 // contiguous sub-array with maximum sum
 // O(N)
 
-long long kadane_algo(int ar[], int n) {
+long long kadaneAlgo(int ar[], int n) {
   long long max_so_far = ar[0];
   long long cur_max = ar[0];
   for(int i = 1; i < n; i++) {
