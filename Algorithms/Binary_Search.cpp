@@ -1,7 +1,7 @@
-// search for element in the array which is just greater than the given element.
-// O(logN)
+// Search for element in the array which is just greater than the given element
+// O(log N)
 
-int binary_search(int ar[], int n, int element) {
+int binarySearch(int ar[], int n, int element) {
 	int l = 0, r = n;
 	while(l < r) {
 		int mid = (l + r) / 2;
