@@ -1,7 +1,7 @@
 // dijkstras shortest path algorithm
 // O(V + E logV)
 
-vector < pair < int, int > > v[N];
+vector<pair<int, int> > v[N];
 bool vis[N];
 int parent[N];
 long long dist[N];
