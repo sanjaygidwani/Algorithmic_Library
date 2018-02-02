@@ -2,13 +2,11 @@
 // O(E logV)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
-const int N = 100000 + 5;
-
-int *id = new int[N];
-pair <long long, pair<int, int> > p[N];
+const int N = 1e5 + 5;
+int id[N];
+pair<long long, pair<int, int> > p[N];
 int nodes, edges;
 
 void init() {
