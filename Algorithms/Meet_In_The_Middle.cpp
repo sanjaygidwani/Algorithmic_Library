@@ -1,7 +1,8 @@
 // maximum sum subset having sum <= s (10 ^ 18), n (40), ai (10 ^ 12)
 // O(2 ^ (N / 2) * N)
 
-long long X[2000005], Y[2000005];
+long long X[2000005];
+long long Y[2000005];
 
 void calcsubarray(long long a[], long long x[], int n, int c) {
 	for(int i = 0; i < (1 << n); i++) {
