@@ -6,9 +6,9 @@ long long tree[4 * N];
 long long lazy[4 * N];
 
 void build(int node, int start, int end) {
-	if(start == end) {
+	if(start == end)
 		tree[node] = ar[start];
-	} else {
+	else {
 		int mid = (start + end) / 2;
 		build(2 * node, start, mid);
 		build(2 * node + 1, mid + 1, end);
@@ -25,9 +25,8 @@ void update(int node, int start, int end, int l, int r, long long val) {
 		}
 		lazy[node] = 0;
 	}
-	if(start > end or start > r or end < l) {
+	if(start > end or start > r or end < l)
 		return;
-	}
 	if(start >= l and end <= r) {
 		tree[node] += (end - start + 1) * val;
 		if(start != end) {
@@ -43,9 +42,8 @@ void update(int node, int start, int end, int l, int r, long long val) {
 }
 
 long long query(int node, int start, int end, int l, int r) {
-	if(start > end or start > r or end < l) {
+	if(start > end or start > r or end < l)
 		return 0;
-	}
 	if(lazy[node] != 0) {
 		tree[node] += (end - start + 1) * lazy[node];
 		if(start != end) {
@@ -54,9 +52,8 @@ long long query(int node, int start, int end, int l, int r) {
 		}
 		lazy[node] = 0;
 	}
-	if(start >= l and end <= r) {
+	if(start >= l and end <= r)
 		return tree[node];
-	}
 	int mid = (start + end) / 2;
 	long long p1 = query(2 * node, start, mid, l, r);
 	long long p2 = query(2 * node + 1, mid + 1, end, l, r);
