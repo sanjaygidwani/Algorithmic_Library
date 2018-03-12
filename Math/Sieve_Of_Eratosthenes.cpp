@@ -5,8 +5,8 @@ void sieve() {
 	memset(prm, 1, sizeof(prm));
 	prm[0] = prm[1] = 0;
 	for(int i = 2; i * i <= N; ++ i) {
-		if(prm[i])
-			for(int j = i * i; j <= N; j += i) {
+		if(prm[i]) {
+			for(int j = i * i; j <= N; j += i)
 				prm[j] = 0;
 		}
 	}
