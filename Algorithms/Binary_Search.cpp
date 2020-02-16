@@ -9,8 +9,7 @@ int binarySearch(int ar[], int n, int element) {
         int mid = (l + r) / 2;
         if(ar[mid] > element) {
             r = mid;
-        } 
-        else {
+        } else {
             l = mid + 1;
         }
     }
